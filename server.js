@@ -34,7 +34,7 @@ app.post("/", (req, resp) => {
     auth: "kerim:64877b61efabd109d42b42f11686756c-us19",
   };
   const request = https.request(url, options, (res) => {
-    if (res.statusCode === "200") {
+    if (res.statusCode === 200) {
       resp.sendFile(__dirname + `/success.html`);
     } else {
       resp.sendFile(__dirname + `/failure.html`);
