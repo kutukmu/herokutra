@@ -31,7 +31,7 @@ app.post("/", (req, resp) => {
   const url = "https://us19.api.mailchimp.com/3.0/lists/804c7ba3ec";
   const options = {
     method: "POST",
-    auth: "kerim:aa64877b61efabd109d42b42f11686756c-us19",
+    auth: "kerim:64877b61efabd109d42b42f11686756c-us19",
   };
   const request = https.request(url, options, (res) => {
     if (res.statusCode === "200") {
